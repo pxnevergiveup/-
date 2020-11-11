@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin:0;
+    color:#d47f25;
+    font-style:oblique;
+}
+body {
+    background:url("../image/zhuce.jpg") no-repeat;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    background-size:100% 100%;
+}
+.main {  
+    z-index:100;  
+    background:url(../image/b1.png) center;
+    position:absolute;
+    border-radius:20px;
+    top:calc(50% - 300px);
+    left:calc(50% - 250px);
+    width:500px;
+    height:600px;
+}
+.lab0{
+	top:85px;
+}
+.lab1 {
+    top:169px;
+}
+.lab2 {
+    top:280px;
+}
+#lab3 {
+    z-index:998;
+}
+.lab {
+    z-index:999;
+    display:none;
+    right: -109px;
+    background: #fff;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+}
+    .lab::before {
+		bottom: 25px;
+		right: 193px;
+		color: #fff;
+		z-index: -1;
+		content: "";
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		border-width: 30px 9px 22px 0;
+		border-style: solid;
+		border-right-color: transparent;
+		border-top-color: transparent;
+		border-radius: 0 0 0 60px;
+	}
+    .main header {
+        left:30px;
+        top:20px;
+        position:absolute;
+        font-size:28px;
+        font-weight:700;
+    }
+form {
+    height:100%;
+    justify-content:space-around;
+    display:flex;
+    flex-direction:column;
+}
+.form {
+    width:55%;
+    margin:0 auto;
+    margin-top:20px;
+    height:80%;
+    justify-content:space-around;
+    display:flex;
+    flex-direction:column;
+}
+input[type=radio] {
+    width:auto;
+    height:auto;
+}
+input[type=submit] {
+    box-shadow:1px 1px #000;
+    background:#fa5050;
+    border-radius:8px;
+    color:#9d2222;
+    font-size:18px;
+    font-weight:800;    
+    letter-spacing:25px;
+}
+    input[type=submit]:hover {
+        color:#ffb300;
+        background:#df4545;
+        box-shadow:none;
+    }
+    input[type=radio] + input[type=radio] {
+        margin-left:30px;
+    }
+input {
+    padding-left:10px;
+    letter-spacing:3px;
+    height:40px;
+}
+select{
+	text-align:center;
+	height:40px;
+	cursor:pointer;
+	width:135px;
+}
+option {
+	cursor:pointer;
+	text-align:center;
+}

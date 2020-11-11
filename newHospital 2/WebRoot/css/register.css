@@ -1,0 +1,202 @@
+* {
+    margin:0;
+    padding:0;
+    opacity:1;
+}
+a {
+    text-decoration:none;
+}
+.content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-642.5px;
+    margin-top:-300px;
+    width:1285px;
+    height:600px;
+    background:linear-gradient(rgba(130, 130, 238, 0.5) ,rgba(92, 63, 63, 0.5));
+    border-radius:25px;
+    transform:scale(0);
+    display:flex;
+    animation:scale 0.8s forwards;
+    animation-delay:0.5s;
+    border:1px solid #fff;
+}
+@keyframes scale{
+    0% {
+        transform:scale(0);
+    }
+    80% {
+        transform:scale(1.2);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+.content_left,.content_right {
+    position:relative;   
+    height:100%;   
+}
+.content_left {
+    width:490px;
+    border-right:1px solid #eee;
+}
+.content_right {
+    flex:1;
+}
+.msg_head {
+    display:block;
+    position:absolute;
+    line-height:100px;
+    text-align:center;
+    width:100%;
+    font-size:25px;
+}
+.msg_card,.register {    
+    
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    background:linear-gradient(rgba(130, 130, 238, 0.5) ,rgba(255, 255, 255, 0.5));
+}
+.msg_card {
+    height:65%;
+    width:63%;
+}
+.jieshao {
+        color:#848484;
+        position:relative;
+        border-radius:10px;
+        width:100%;
+        height:100%;
+    }
+        .jieshao + .jieshao {
+            margin-left:31px;
+        }
+        .jieshao > header {
+            position:relative;
+            border-bottom:1px solid #999;
+            padding-bottom:20px;
+        }
+            .jieshao > header span {
+                display:block;
+                padding-top:28px;   
+                padding-bottom:10px;             
+                color:#525252;
+                font-size:16px;
+            }
+            .jieshao > header img {
+                width:91px;
+                position:relative;
+                top:13px;
+                border-radius:50%;
+            }
+    .jieshao > content {
+        display:block;
+        padding:20px 0;
+        border-bottom:1px solid #999;
+    }
+    .jieshao .zixunyuyue {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:65px;
+    }
+        .jieshao .zixunyuyue .zixun {
+            position:absolute;
+            bottom:28px;
+            line-height:26px;
+            color:#666;
+            display:block;
+            float:left;
+            width:35%;
+            border-radius:26px;
+            height:26px;
+            border:1px solid #777;
+            transition:all 0.3s;
+        }
+            .zixun:hover {
+                color:#fff !important;
+                background:#2e91f6;
+                border:1px solid #2e91f6 !important;
+            }
+        .zixun {
+            left:95px;
+        }
+.register_head {
+    line-height:100px;
+    width:100%;
+    text-align:center;
+    font-size:25px;
+    position:absolute;
+}
+.register {
+
+    height:430px;
+    display:flex;
+    width:100%;
+}
+.week {
+    flex:calc(1 / 7);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+    .week + .week {
+        border-left:1px solid #fff;
+    }
+.worktime {
+    display:block;
+    flex:calc(1 / 5); 
+}
+input[type=radio] {
+    -webkit-appearance:button;
+    cursor:pointer;
+    background:none;
+}
+input[type=radio]:LAST-OF-TYPE{
+	border-bottom: 1px solid #fff;
+}
+    input[type=radio]:hover {
+        background:linear-gradient(rgba(130, 130, 238, 0.5) ,rgba(255, 255, 255, 0.5));
+    }
+    input[type=radio]:checked {
+        background:linear-gradient(rgba(130, 130, 238, 0.5) ,rgba(255, 255, 255, 0.5));
+    }
+    .worktime + .worktime {
+        border-top:1px solid #fff;
+    }
+.menu {
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    line-height:86px;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+}
+label.time {
+    display:block; 
+    height:86px;   
+}
+.button {
+    position:absolute;
+    transform:translateX(-50%);
+    left:50%;
+    bottom:20px;
+    width:120px;
+    line-height:50px;
+    height:50px;
+    text-indent:10px;
+    letter-spacing:10px;
+    font-size:18px;
+    background:linear-gradient(90deg,rgba(130, 130, 238, 0.5), rgba(146, 117, 152, 0.5));
+    transition:all 0.5s;
+    border-radius:10px;
+    box-shadow:0px 0px 15px 1px #fff;
+    cursor:pointer;
+}
+    .button:hover {
+        box-shadow:0px 0px 0px 1px #fff;
+    }

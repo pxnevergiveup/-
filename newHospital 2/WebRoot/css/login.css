@@ -1,0 +1,152 @@
+* {
+    font: italic "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color:#3a2d1f;         
+}
+body {
+    background:url(../image/zhuzhan.jpg) no-repeat fixed;
+    background-size:cover;
+}
+.login_main {
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:500px;
+    height:420px;
+    margin-left:-250px;
+    margin-top:-210px;
+    background-image:radial-gradient(500px 420px at center center,rgba(255, 239, 176, 0.6),rgba(0, 0, 0, 0.14));
+    border-radius:30px;
+    box-shadow:20px 20px 30px #333;
+    overflow:hidden;
+}
+.login_main .logins {
+    height:300%;
+    width:430px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+}
+    .login_main .logins input[name="rad"] {
+        display:none;
+    }
+.login_main .logins .login {
+    padding:0;
+    margin:0;    
+    height:420px;
+    transition:all 0.3s;
+}
+    .login_main .logins .login header {
+        margin-top:35px;
+        text-align:left;
+        font-size:25px;
+        text-shadow:1px 1px 1px #444;
+    }
+    .login_main .logins .login h4 {
+        margin-left:30px;
+        margin-top:18px;
+        text-shadow:1px 1px 1px #444;
+    }
+.login_main .content {
+    margin:0 auto;
+    width:350px;
+}
+.login_main .text {
+    display:block;
+    margin-top:40px;
+    font-size:18px;
+}
+    .login_main .text input[type=text],
+    .login_main .text input[type=password] {
+        width:230px;
+        height:35px;
+        font-size:18px;
+        box-shadow:1px 1px 5px #444;
+        padding-left:9px;
+    }
+.login_main .content input[type=submit] {
+    margin-top:40px;
+    width:235px;
+    height:40px;
+    background-image:linear-gradient(RGBA(255,255,255,1),RGBA(140,81,81,0.5));
+    background:RGBA(140, 81, 81,0.8);
+    border-radius:10px;
+    box-shadow:1px 1px 5px #444;
+    font-size:15px;
+}
+    .login_main .content input[type=submit]:hover {        
+        background:RGBA(153, 63, 63, 0.8);
+        color:#000;
+    }
+.login_main .nav {
+    position:absolute;
+    width:200px;
+    height:auto;
+    left:360px;
+    bottom:80px;
+    font-weight:900;
+}
+.login_main .nav label {
+    display:block;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    background-color:#eee;
+    text-align:center;
+    line-height:50px;
+    margin-top:10px;
+    transition:all 0.3s;
+    box-shadow:5px 5px 5px -5px #444;
+    cursor:pointer;    
+}
+    .login_main .nav label:nth-last-child(-n+2) {
+        margin-top:50px;
+    }
+    .login_main .nav label:hover {
+        width:100px;
+    }
+    .login_main .nav label:first-child {
+        background-color:#ce0326;
+        color:#fff;
+    }
+        .login_main .nav label:first-child:hover {
+            text-indent:17px;
+            letter-spacing:15px;
+        }
+    .login_main .nav label:nth-of-type(2) {
+        border:1px solid #4d9c68;
+        background-color:#d3e7da;
+        color:#4d9c68;
+    }
+    
+        .login_main .nav label:nth-of-type(2):hover {
+            border:1px solid #1d7f40;
+            color:#1d7f40;
+            background:#e5ece9;
+            letter-spacing:5px;
+        }
+    .login_main .nav label:nth-of-type(3) {
+        border:1px solid #e06077;
+        background-color:#eee;       
+		color:#e06077; 
+    }
+    .login_main .nav label:nth-of-type(3):hover {
+    	color:#d30025;
+    	border:1px solid #d30025;
+    	text-indent:15px;
+    	letter-spacing:10px;
+    }
+    .login_main .nav label:first-child:hover::after {
+        content:'\751f';
+    }
+    .login_main .nav label:nth-of-type(2):hover::after {
+        content:'\7406\5458';
+    }
+    .login_main .nav label:nth-of-type(3):hover::after {
+        content:'\518c';
+    }
+.login_main #r1:checked ~ .s1 {
+    margin-top:0%;
+}
+.login_main #r2:checked ~ .s1 {
+    margin-top:-420px;
+}

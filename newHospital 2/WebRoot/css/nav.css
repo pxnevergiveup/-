@@ -1,0 +1,125 @@
+@CHARSET "UTF-8";
+.nav {
+    position:relative;
+    z-index:9900;
+}
+    .nav li {
+        line-height: 50px;
+        text-align: center;
+    }
+    .nav > ul {
+        width: 100%;
+        display:flex;
+    }
+    .nav > ul > li {       
+        transition: background .4s;
+        cursor:pointer;
+    }
+        .nav > ul > li:first-of-type {
+            border-radius: 8px 0 0 8px;
+        }
+        .nav > ul > li:last-of-type {
+            border-radius: 0 8px 8px 0;
+        }
+        .nav > ul > li > ul {
+            height: 0;
+            width:200px;
+        }
+        .nav > ul > li + li {
+            margin-left:-100px;
+        }
+        .nav > ul > li > ul {
+            perspective: 400px;
+        }
+        .nav > ul > li:last-child:hover {
+            border-radius: 0 8px 8px 0;
+        }
+        .nav > ul > li:first-child:hover {
+            border-radius: 8px 0 0 8px;
+        }
+        .nav > ul > li > ul > li{
+            background:#83bde8;
+	        opacity: 0;
+	        transform: rotateY(90deg);
+	        transition: opacity .4s,transform .5s,background .2s;
+        }
+        .nav > ul > li > ul > li a {
+            display:block;
+        }
+            .nav > ul > li > ul > li + li {
+                border-top:1px solid #888;
+            }
+        .nav>ul>li:hover ul>li{
+	        opacity: 1;
+	        transform: none;
+        }
+        .nav > ul > li > ul > li:hover {
+            background:#8daaee;
+        }
+.nav > ul > li > ul > li:nth-child(1){
+	transition-delay: 300ms;
+}
+    .nav > ul > li > ul > li:first-of-type {
+        border-radius: 8px 8px 0 0;
+    }
+.nav > ul > li > ul > li:nth-child(2){
+	transition-delay: 240ms;	
+}
+.nav > ul > li > ul > li:nth-child(3){
+	transition-delay: 180ms;	
+}
+.nav > ul > li > ul > li:nth-child(4){
+	transition-delay: 120ms;	
+}
+.nav > ul > li > ul > li:nth-child(5){
+	transition-delay: 60ms;	
+}
+    .nav > ul > li > ul > li:last-of-type {
+        border-radius: 0 0 8px 8px;
+    }
+.nav > ul > li:hover ul li:nth-child(1)
+{        
+	transition-delay: 60ms;
+}
+.nav > ul > li:hover ul li:nth-child(2)
+{
+	transition-delay: 120ms;
+}
+.nav > ul > li:hover ul li:nth-child(3)
+{
+	transition-delay: 180ms;
+}
+.nav > ul > li:hover ul li:nth-child(4)
+{
+	transition-delay: 240ms;
+}	
+.nav > ul > li:hover ul li:nth-child(5)
+{
+	transition-delay: 300ms;
+}
+#denglu {
+            margin:5px auto;
+            color:#ffb362;
+            display:block;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            position:relative;
+            background:#81a0a1;
+            transition:all 0.3s;
+        }
+            #denglu::before {
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%)
+            }
+            #denglu:hover{
+                background:#98d6d8;
+                color:#fff;
+                transform:scale(1.2);
+            }
+.denglu-hover {
+    background:#98d6d8!important;
+    color:#fff!important;
+    transform:scale(1.2);
+}
